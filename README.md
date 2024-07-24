@@ -14,3 +14,17 @@ Item names are configurable, as well as the time to check for map/compass invent
 Big thanks to Outsider for his help on optimizing this!
 
 ### REQUIRES VORP
+
+
+### Z changes
+
+Added the image and corresponding sql
+I have created a logic set that changes based on possession of either or both items as well as a town check.
+
+The current logic structure:
+With COMPASS only: both on foot and on horse, compass is visible
+With MAP only: no radar displayed when mounted or in vehicle. Minimap while on foot in town (RP - use bildings to orient map)
+With COMPASS and MAP: compass needle while mounted or in vehicle, minimap while on foot no matter the location.
+
+INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('misc_map_map', 'Map', 5, 1, 'item_standard', 1, 'So you know where to go');
+INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('misc_map_compass', 'Compass', 5, 1, 'item_standard', 1, 'So you know how to get there');
