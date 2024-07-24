@@ -27,5 +27,5 @@ With COMPASS only: both on foot and on horse, compass is visible<br>
 With MAP only: no radar displayed when mounted or in vehicle. Minimap while on foot in town (RP - use bildings to orient map)<br>
 With COMPASS and MAP: compass needle while mounted or in vehicle, minimap while on foot no matter the location.<br>
 
-INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('misc_map_map', 'Map', 5, 1, 'item_standard', 1, 'So you know where to go'); <br>
-INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('misc_map_compass', 'Compass', 5, 1, 'item_standard', 1, 'So you know how to get there');
+INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('map', 'Map', 5, 1, 'item_standard', 1, 'So you know where to go'); <br>
+INSERT INTO `items`(`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `desc`) VALUES ('compass', 'Compass', 5, 1, 'item_standard', 1, 'So you know how to get there');
