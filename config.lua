@@ -6,8 +6,8 @@ Config.DisableTabWheelCompass = false    -- Disable tab wheel compass (independe
 Config.UseMap = true                    -- Default use map item
 
 -- Compass/map items
-Config.CompassItemToCheck   = "misc_map_compass"   -- Compass item in the db to check against
-Config.MapItemToCheck       = "misc_map_map"           -- Map item in the db to check against
+Config.CompassItemToCheck   = "compass"   -- Compass item in the db to check against
+Config.MapItemToCheck       = "map"           -- Map item in the db to check against
 
 -- Map types: 0 is off, 1 is normal, 2 is expanded, 3 is simple compass
 Config.MapTypeNoCompass = 0             -- Map type displayed with no compass (default nothing)
@@ -18,7 +18,7 @@ Config.MapTypeOnMount = 3               -- Map type displayed on horseback/vehic
 Config.UseUserCompass = false           -- Default to not use user compass
 
 -- Time interval to check for inventory updates and horse/foot status (in ms)
-Config.TimeToCheck = 1000               -- Default 1 seconds
+Config.TimeToCheck = 5000               -- Default 1 seconds
 
 -- List of all user groups that are exempted from the item check (can use map and compass no matter what)
 Config.Exempted = {
